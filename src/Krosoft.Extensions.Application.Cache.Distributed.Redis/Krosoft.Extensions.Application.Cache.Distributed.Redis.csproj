@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<PackageTags>Krosoft Extension Application Cache Distributed Redis</PackageTags>
 		<Description>Package pour faciliter la mise en place de la couche application avec du cache.</Description>
@@ -13,6 +13,6 @@
 		<PackageReference Include="Krosoft.Extensions.Cqrs" Version="2026.7.19.8446" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Krosoft.Extensions.Hosting\Krosoft.Extensions.Hosting.csproj" />
+		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.7.18.8400" />
 	</ItemGroup>
 </Project>

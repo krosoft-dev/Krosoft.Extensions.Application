@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Krosoft.Extensions.Application.Cache.Distributed.Redis/Krosoft.Extensions.Application.Cache.Distributed.Redis.csproj" />
+  </Folder>
+</Solution>
