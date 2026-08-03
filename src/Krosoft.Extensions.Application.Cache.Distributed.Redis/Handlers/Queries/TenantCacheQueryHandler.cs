@@ -18,7 +18,7 @@ public class TenantCacheQueryHandler : IRequestHandler<TenantCacheQuery, IDictio
 
     public async Task<IDictionary<string, long>> Handle(TenantCacheQuery request, CancellationToken cancellationToken)
     {
-        _logger.LogInformation($"Récupération du contenu du cache du tenant {request.CurrentTenantId}...");
+        _logger.LogInformation("Récupération du contenu du cache du tenant {TenantId}...", request.CurrentTenantId);
 
         var lengthByKey = new Dictionary<string, long>();
         var keys = _tenantDistributedCacheProvider.GetKeys(request.CurrentTenantId!, string.Empty);

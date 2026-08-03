@@ -46,7 +46,7 @@ public abstract class GlobalCacheRefreshCommandBaseHandler : IRequestHandler<Glo
 
         await DistributedCacheProvider.SetAsync(_cacheKeyLastRefresh, _dateTimeService.Now, cancellationToken);
 
-        _logger.LogInformation($"Refresh du cache en {sw.Elapsed.ToShortString()}");
+        _logger.LogInformation("Refresh du cache en {Elapsed}", sw.Elapsed.ToShortString());
 
         await AfterAsync(cancellationToken);
 

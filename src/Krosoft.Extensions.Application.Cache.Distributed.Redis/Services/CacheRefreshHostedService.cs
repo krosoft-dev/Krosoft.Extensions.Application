@@ -20,7 +20,7 @@ public class CacheRefreshHostedService<TCommand> : ScheduledHostedService
 
     protected override async Task DoWork(CancellationToken cancellationToken)
     {
-        Logger.LogInformation($"{nameof(CacheRefreshHostedService<TCommand>)} > {DateTime.Now:hh:mm:ss} > Run");
+        Logger.LogInformation("{ServiceName} > {Timestamp:hh:mm:ss} > Run", nameof(CacheRefreshHostedService<TCommand>), DateTime.Now);
 
         try
         {
