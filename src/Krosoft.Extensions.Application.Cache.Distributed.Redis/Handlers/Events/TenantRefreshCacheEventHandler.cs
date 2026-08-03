@@ -20,7 +20,7 @@ public class TenantRefreshCacheEventHandler : INotificationHandler<TenantRefresh
 
     public async Task Handle(TenantRefreshCacheEvent notification, CancellationToken cancellationToken)
     {
-        _logger.LogInformation($"Mise à jour du cache pour le tenant {notification.TenantId}...");
+        _logger.LogInformation("Mise à jour du cache pour le tenant {TenantId}...", notification.TenantId);
 
         var command = new TenantCacheRefreshCommand(false)
         {

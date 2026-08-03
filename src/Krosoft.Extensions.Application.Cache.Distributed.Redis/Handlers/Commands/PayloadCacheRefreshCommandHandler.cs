@@ -26,7 +26,7 @@ public class PayloadCacheRefreshCommandHandler : IRequestHandler<PayloadCacheRef
         var message = JsonConvert.DeserializeObject<CacheRefreshMessage>(request.Payload);
         if (message != null)
         {
-            _logger.LogInformation($"Refresh du cache pour le tenant {message.TenantId}");
+            _logger.LogInformation("Refresh du cache pour le tenant {TenantId}", message.TenantId);
             var command = new AuthCacheRefreshCommand(false, false)
             {
                 CurrentTenantId = message.TenantId
@@ -36,7 +36,7 @@ public class PayloadCacheRefreshCommandHandler : IRequestHandler<PayloadCacheRef
         }
         else
         {
-            _logger.LogError($"Impossible de refresh le cache à partir du payload : {request.Payload}");
+            _logger.LogError("Impossible de refresh le cache à partir du payload : {Payload}", request.Payload);
         }
     }
 }
