@@ -13,6 +13,6 @@
 		<PackageReference Include="Krosoft.Extensions.Cqrs" Version="2026.8.7.8923" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.8.15.9158" />
+		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.8.18.9207" />
 	</ItemGroup>
 </Project>
