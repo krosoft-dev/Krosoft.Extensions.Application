@@ -10,7 +10,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Krosoft.Extensions.Cache.Distributed.Redis" Version="2026.9.1.10096" />
-		<PackageReference Include="Krosoft.Extensions.Cqrs" Version="2026.8.29.9930" />
+		<PackageReference Include="Krosoft.Extensions.Cqrs" Version="2026.9.1.10153" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.9.1.10107" />
