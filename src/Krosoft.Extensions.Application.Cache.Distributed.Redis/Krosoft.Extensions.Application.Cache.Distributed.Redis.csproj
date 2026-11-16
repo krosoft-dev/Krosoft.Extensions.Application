@@ -9,10 +9,10 @@
 		<PackageReference Include="MediatR" Version="12.5.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Cache.Distributed.Redis" Version="2026.11.11.13056" />
+		<PackageReference Include="Krosoft.Extensions.Cache.Distributed.Redis" Version="2026.11.15.13332" />
 		<PackageReference Include="Krosoft.Extensions.Cqrs" Version="2026.11.12.13139" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.11.11.13025" />
+		<PackageReference Include="Krosoft.Extensions.Hosting" Version="2026.11.15.13341" />
 	</ItemGroup>
 </Project>
